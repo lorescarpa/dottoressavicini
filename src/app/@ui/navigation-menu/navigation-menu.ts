@@ -175,10 +175,10 @@ export default class NavigationMenu {
   isMenuOpen = signal(false);
   readonly navLinks = signal([
     { label: 'Home', fragment: '/' },
-    { label: 'About me', fragment: 'about-me' },
-    { label: 'Services', fragment: 'services' },
-    // { label: 'About Psycoterapy', fragment: 'psycotherapy' },
-    // { label: 'Reading room', fragment: 'reading-room' },
+    { label: 'About me', fragment: '/about-me' },
+    { label: 'Services', fragment: '/services' },
+    // { label: 'About Psycoterapy', fragment: '/psycotherapy' },
+    // { label: 'Reading room', fragment: '/reading-room' },
   ]);
 
   toggleMenu() {
