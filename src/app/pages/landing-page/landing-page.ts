@@ -51,7 +51,7 @@ export class LandingPage implements AfterViewInit, OnDestroy {
     Ogni percorso è personalizzato e costruito insieme, a partire dai bisogni e dagli obiettivi della persona, in uno spazio di ascolto accogliente e non giudicante.`,
       direction: 'row-reverse',
       type: 'secondary',
-      imgSrc: '/assets/resources/hands.jpg',
+      imgSrc: 'assets/resources/hands.jpg',
       buttonText: 'Scopri nel dettaglio i miei servizi',
     },
     // {
@@ -79,7 +79,7 @@ export class LandingPage implements AfterViewInit, OnDestroy {
     //   esperienze e sulle vostre relazioni interpersonali.`,
     //   direction: 'row',
     //   type: 'secondary',
-    //   imgSrc: '/assets/resources/bookshelf.jpg',
+    //   imgSrc: 'assets/resources/bookshelf.jpg',
     //   buttonText: 'Scopri di più',
     // },
   ];
