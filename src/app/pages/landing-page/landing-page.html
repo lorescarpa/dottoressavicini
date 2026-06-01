@@ -1,0 +1,10 @@
+<div class="flex flex-col">
+  <av-hero-section id="home"></av-hero-section>
+  @for (section of sections; track $index) {
+  <av-generic-section
+    [id]="section.id"
+    [data]="section"
+    (clickEvent)="navigateTo($event)"
+  ></av-generic-section>
+  }
+</div>

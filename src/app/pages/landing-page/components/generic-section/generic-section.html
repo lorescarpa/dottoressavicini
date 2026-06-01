@@ -1,0 +1,35 @@
+<section
+  class="bg-[url(/assets/resources/background.png)] bg-cover bg-fixed bg-center bg-no-repeat text-lg font-light text-primary animate-opacity"
+>
+  <div
+    class="flex flex-col justify-between w-full h-auto pb-6 lg:pb-0"
+    [class]="
+      (data()?.type === 'secondary' ? 'bg-papyrus-100/30' : 'bg-olive-500/30') +
+      (data()?.direction === 'row' ? ' lg:flex-row' : ' lg:flex-row-reverse')
+    "
+  >
+    @if (data()?.imgSrc) {
+      <img
+        [src]="data()?.imgSrc"
+        alt=""
+        class="object-cover w-full h-full opacity-80 lg:h-[650px] lg:w-[650px] lg:max-w-2xl lg:flex-1"
+      />
+    }
+
+    <div
+      id="services"
+      class="container flex items-center gap-8 py-16 px-4 flex-col lg:h-auto lg:flex-1 lg:static"
+    >
+      <h2
+        class="font-montserrat font-light uppercase text-2xl text-center tracking-[0.1rem] text-primary-800 lg:text-3xl lg:tracking-[0.6rem] border-b border-b-olive-600 pb-3 px-8 w-fit animate-fadeDown"
+        [class]="data()?.type === 'primary' ? 'text-primary-800' : 'text-primary-800'"
+      >
+        {{ data()?.header }}
+      </h2>
+      <p class="md:text-center animate-fadeDown" [innerHTML]="data()?.content"></p>
+      <button av-button (click)="clickEvent.emit(data()?.id || '')">
+        {{ data()?.buttonText }}
+      </button>
+    </div>
+  </div>
+</section>

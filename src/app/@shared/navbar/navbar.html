@@ -1,0 +1,41 @@
+<nav
+  class="w-full bg-gradient-to-r from-olive-900 to-olive-800 shadow-md transition-colors duration-300"
+>
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-2">
+    <div class="flex flex-row w-full md:w-auto justify-between">
+      <div
+        class="text-olive-100 text-2xl font-bold font-italiana cursor-default flex gap-3 items-center"
+      >
+        <img src="assets/resources/logo.png" alt="logo" class="h-[30px] opacity-80" />
+        <a [routerLink]="''" [fragment]="'home'" routerLinkActive="active"> Alessia Vicini </a>
+      </div>
+      <button
+        (click)="toggleMenu()"
+        class="text-olive-100 md:hidden"
+        [ngClass]="{ 'ico-open': isMenuOpen, 'ico-closed': !isMenuOpen }"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+
+    <ul
+      [ngClass]="{ block: isMenuOpen, hidden: !isMenuOpen, open: isMenuOpen, closed: !isMenuOpen }"
+      class="md:flex h-screen md:h-auto md:items-center mt-10 md:mt-0 flex items-center md:gap-5 gap-10 md:flex-row flex-col"
+    >
+      @for (item of navLinks; track $index) {
+        <li
+          class="text-olive-50 hover:text-olive-200 text-xs font-light uppercase hover:scale-105 transition-all duration-100"
+        >
+          <a
+            [routerLink]="item.fragment"
+            routerLinkActive="active"
+            (click)="toggleMenu()"
+            [ngClass]="{ 'animate-fadeDown': isMenuOpen, '': !isMenuOpen }"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,53 @@
+@keyframes rotateR {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateL {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.ico-open {
+  animation: rotateR 200ms ease-in;
+  transform: rotate(90deg);
+}
+
+.ico-closed {
+  animation: rotateL 200ms ease-in;
+  transform: rotate(0deg);
+}
+
+.menu-open {
+  animation: slideIn 200ms ease-in;
+}
+
+.menu-closed {
+  animation: slideOut 200ms ease-in;
+}
