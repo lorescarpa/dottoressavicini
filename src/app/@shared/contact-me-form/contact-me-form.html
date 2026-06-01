@@ -1,0 +1,48 @@
+<form novalidate>
+  <div class="flex flex-wrap gap-8 justify-center items-center">
+    <div
+      avFormField
+      class="flex flex-col gap-2 w-full sm:w-64 flex-grow sm:text-olive-100 text-olive-800"
+    >
+      <label avLabel for="name" class="sm:text-olive-100 text-olive-800">Nome e cognome</label>
+      <input
+        avInput
+        id="name"
+        type="name"
+        [formField]="form.name"
+        placeholder="Inserisci il tuo nome e cognome"
+        class="w-full sm:text-olive-100 text-olive-800"
+      />
+    </div>
+    <div
+      avFormField
+      class="flex flex-col gap-2 w-full sm:w-64 flex-grow sm:text-olive-100 text-olive-800"
+    >
+      <label avLabel for="email" class="sm:text-olive-100 text-olive-800">Email</label>
+      <input
+        avInput
+        id="email"
+        type="email"
+        [formField]="form.email"
+        placeholder="Inserisci la tua email"
+        class="w-full sm:text-olive-100 text-olive-800"
+      />
+    </div>
+
+    <div avFormField class="flex flex-col gap-2 w-full sm:text-olive-100 text-olive-800">
+      <label avLabel for="message" class="sm:text-olive-100 text-olive-800">Messaggio</label>
+      <textarea
+        avInput
+        id="message"
+        [formField]="form.message"
+        placeholder="Inserisci il tuo messaggio"
+        class="w-full h-80 resize-none sm:text-olive-100 text-olive-800"
+      ></textarea>
+    </div>
+
+    <div class="w-full flex flex-col sm:flex-row gap-5 justify-between">
+      <button av-button (click)="discard.emit()">Annulla</button>
+      <button av-button (click)="discard.emit()">Invia</button>
+    </div>
+  </div>
+</form>

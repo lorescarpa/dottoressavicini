@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "logoTitle": "AvPsi",
+    "navLinks": {
+      "home": "Home",
+      "aboutMe": "About me",
+      "services": "Services",
+      "readingRoom": "Reading room",
+      "contacts": "Contacts"
+    }
+  },
+  "landingPage": {
+    "heroSection": {
+      "preTitle": "Dottoressa",
+      "title": "Alessia Vicini",
+      "subtitle": "Psicologa clinica"
+    },
+    "aboutMe": {
+      "header": "Chi sono",
+      "content": "Probabilmente sei qui perché stai cercando aiuto per te stesso o per una persona cara. <br /> Potrebbe essere la prima volta che provi la psicoterapia, o forse sei appena agli inizi. <br /> In questa pagina troverai informazioni di base su di me e sul mio lavoro.<br />Imparerai cos'è e cos'è la psicoterapia, come può aiutarti, quanto dura ecosa aspettarti dopo la prima consulenza."
+    },
+    "readingRoom": {
+      "header": "Sala di lettura",
+      "content": "Vi invito a esplorare l'affascinante mondo della psicologia attraverso citazioni stimolanti che gettano luce su aspetti profondi della mente e del comportamento umano. <br /> Scoprite la saggezza di grandi pensatori nel campo della psicologia, che rivelano verità essenziali sulla natura della psiche umana. <br /> Qui troverete una raccolta di perle di riflessione che non solo vi incuriosiranno, ma vi incoraggeranno anche a riflettere sulle vostre esperienze e sulle vostre relazioni interpersonali."
+    },
+    "services": {
+      "header": "Sulla psicoterapia",
+      "content": "La definizione ufficiale afferma che \"la psicoterapia è l'uso consapevole e intenzionale di metodi clinici e interventi interpersonali derivati da principi psicologici riconosciuti per aiutare le persone a cambiare i propri comportamenti, cognizioni, emozioni e/o altre caratteristiche personali in una direzione che lo psicoterapeuta considera auspicabile\". In poche parole, si tratta di un incontro tra un terapeuta e un cliente/paziente volto a cambiare le loro esperienze, il loro modo di pensare e il loro comportamento, a eliminare sintomi fastidiosi e le loro cause..."
+    }
+  }
+}

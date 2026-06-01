@@ -1,2 +1,146 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@theme {
+  --font-italiana: 'Italiana', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  /* PRIMARY */
+  --color-primary-50: #ecf1ec;
+  --color-primary-100: #dde5dc;
+  --color-primary-200: #bec8be;
+  --color-primary-300: #a8b4a9;
+  --color-primary-400: #8e9c90;
+  --color-primary-500: #6f7f72;
+  --color-primary-600: #5f6f63;
+  --color-primary-700: #546257;
+  --color-primary-800: #48544b;
+  --color-primary-900: #3b453d;
+
+  /* SALMON */
+  --color-salmon-50: #fef4f2;
+  --color-salmon-100: #fde8e3;
+  --color-salmon-200: #fcd6cc;
+  --color-salmon-300: #f9b8a8;
+  --color-salmon-400: #f38c72;
+  --color-salmon-500: #e96a4a;
+  --color-salmon-600: #d64e2c;
+  --color-salmon-700: #b43f21;
+  --color-salmon-800: #95371f;
+  --color-salmon-900: #7c3320;
+  --color-salmon-950: #43170c;
+
+  /* TERRACOTTA */
+  --color-terracotta-50: #f8f1ee;
+  --color-terracotta-100: #f3e6e0;
+  --color-terracotta-200: #e7cec2;
+  --color-terracotta-300: #debcac;
+  --color-terracotta-400: #d3a792;
+  --color-terracotta-500: #c78f74;
+  --color-terracotta-600: #b38168;
+  --color-terracotta-700: #9e725c;
+  --color-terracotta-800: #88624f;
+  --color-terracotta-900: #6f5040;
+
+  /* OCEAN */
+  --color-ocean-50: #9cc8d3;
+  --color-ocean-100: #6aaebe;
+  --color-ocean-200: #3894a8;
+  --color-ocean-300: #05768f;
+  --color-ocean-400: #046176;
+  --color-ocean-500: #034959;
+  --color-ocean-600: #02303b;
+
+  /* OLIVE */
+  --color-olive-50: #f1f3ef;
+  --color-olive-100: #e6e9e2;
+  --color-olive-200: #cdd3c5;
+  --color-olive-300: #bcc4b0;
+  --color-olive-400: #a7b197;
+  --color-olive-500: #8e9b7a;
+  --color-olive-600: #808c6e;
+  --color-olive-700: #717b61;
+  --color-olive-800: #616a54;
+  --color-olive-900: #4f5744;
+  --color-olive-950: #171e15;
+
+  /* GRAY */
+  --color-gray-50: #c7d0d3;
+  --color-gray-100: #99a2a5;
+  --color-gray-200: #6e7678;
+  --color-gray-300: #454d4f;
+  --color-gray-400: #22282a;
+  --color-gray-500: #000000;
+  --color-gray-600: #000000cc;
+
+  /* PAPYRUS */
+  --color-papyrus-50: #f3e9ce;
+  --color-papyrus-100: #eddeb4;
+  --color-papyrus-200: #e5cf93;
+  --color-papyrus-300: #dbbe6b;
+  --color-papyrus-400: #d1ad44;
+  --color-papyrus-500: #b8942d;
+  --color-papyrus-600: #907423;
+  --color-papyrus-700: #69541a;
+
+  --color-background: #f4f1eb;
+  --color-surface: #ffffff;
+  --color-surface-variant: #e9e4db;
+  --color-border: #d6d0c6;
+  --color-text-primary: #2f2f2a;
+  --color-text-secondary: #6b6b63;
+  --color-text-muted: #8a8a82;
+  --color-success: #7fa98a;
+  --color-warning: #f2c763;
+  --color-error: #de6c6c;
+  --color-info: #7a9bb0;
+
+  /* ANIMATIONS */
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      flex: 1;
+      opacity: 1;
+    }
+    100% {
+      flex: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  --animate-bounce: bounce 1.5s ease-in-out infinite;
+  --animate-fadeDown: fadeDown 0.5s ease-in-out;
+  --animate-pulse: pulse 5s ease-in-out infinite;
+  --animate-infinite-scroll: slide-left 15s linear infinite;
+  --animate-scroll: scroll 20s linear infinite;
+}
