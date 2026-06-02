@@ -42,7 +42,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/dottoressavicini/",
+              "baseHref": "/psicoterapeuta/",
               "budgets": [
                 {
                   "type": "initial",
